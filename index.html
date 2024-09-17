@@ -1,0 +1,222 @@
+<html>
+	<head>
+		<title>Solar's Warehouse</title>
+		<link rel="icon" type="image/x-icon" href="solar.png">
+		<style>
+						#navbar {
+				margin: auto;
+				overflow: hidden;
+				background-color: #222;
+				display: flex;
+				justify-content: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+
+			#navbar a {
+				font-family: Rodondo;
+				font-size: larger;
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				margin: auto;
+				padding: 0px;
+				text-decoration: none;
+			}
+
+			.sticky {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+						@font-face {
+				font-family: AHL;
+				src: url('Fonts/Atkinson-Hyperlegible-Regular-102a.woff2');
+			}
+			@font-face {
+				font-family: Rodondo;
+				src: url('Fonts/Rodondo.otf');
+			}
+			
+			* {
+				font-family: AHL;
+				/* background-color: #222222AA; */
+			}
+			
+			h1 {
+				font-family: Rodondo;
+				color: white;
+				text-align: center;
+			}
+
+			h2 {
+				color: white;
+				text-align: center;
+			}
+
+			a:link {
+				color: white;
+				background-color: transparent;
+				text-decoration: none;
+			}
+
+			p {
+				background-color: #222222AA;
+				color: white;
+				padding: 8px;
+				text-align: center;
+				margin: auto;
+				font-size: 32px;
+			}
+
+			.header {
+				background-color: #222222AA;
+				font-size: 64px;
+				padding: 8px;
+				padding-left: 0px;
+				padding-right: 0px;
+				/* float: left; */
+			}
+
+						.box_grid {
+				display: grid;
+				grid-template-columns: 100%;
+				column-gap: 0;
+				grid-row-gap: 20px;
+			}
+			
+			.grid_box {
+				margin: auto;
+				background-color: #222222AA;
+				padding: 10px;
+				max-width: 350px;
+			}
+
+			@media only screen and (min-width: 750px) {
+				.box_grid {
+					grid-template-columns: 50% 50%;
+				}
+			}
+
+			@media only screen and (min-width: 1050px) {
+				.box_grid {
+					grid-template-columns: 33.3% 33.3% 33.3%;
+				}
+			}
+
+			@media only screen and (min-width: 1500px) {
+				.box_grid {
+					grid-template-columns: 25% 25% 25% 25%;
+				}
+			}
+
+			@media only screen and (min-width: 1800px) {
+				.box_grid {
+					grid-template-columns: 20% 20% 20% 20% 20%;
+				}
+			}
+
+			@media only screen and (min-width: 2160px) {
+				.box_grid {
+					grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+				}
+			}
+
+			.ghost_box {
+				margin: auto;
+				background-color: #00000000;
+				padding: 0px;
+				min-height: 200px;
+				max-width: 350px;
+			}
+
+			body {
+				background-image: url('Backgrounds/downpour menu.png');
+  				background-repeat: no-repeat;
+  				background-attachment: fixed;
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+				<div id="navbar", class="sticky", style="display: grid; grid-template-columns: 20% 20% 20% 20% 20%;">
+			<a href="tiles.html"><h2>Tiles</h2></a>
+			<a href="props.html"><h2>Props</h2></a>
+			<a href="index.html"><h1>Solar's Warehouse</h1></a>
+			<a href="regions.html"><h2>Projects</h2></a>
+			<a href="info.html"><h2>Info</h2></a>
+		</div>
+		<br>
+		<br><br><br>
+		<p>Welcome to Solar's Warehouse formally known as the Modded Regions Starter Pack<br>
+		This is a site to help all level editors who desire to mod the rain game<br>
+		This site has mostly custom assets that have been collected over the years, and almost every single region to exist in the community excluding some that got lost to time<br>
+		It also has the Vanilla assets if you dont want any of the custom ones<br>
+		And don't forget to have fun or try too hahaha
+		</p>
+
+		<h1 class="header">Newly Added Regions</h1>
+		<div class="box_grid">
+						<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Region Packs/Shrouded Assembly.zip"><h1>Shrouded Assembly</h1></a>
+					<a href="Dist/Region Packs/Shrouded Assembly.zip"><img src="Thumbnails/Region Packs/Shrouded Assembly.webp" alt="Shrouded Assembly Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>			<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Regions/Desert Bus.zip"><h1>Desert Bus [BUS]</h1></a>
+					<a href="Dist/Regions/Desert Bus.zip"><img src="Thumbnails/Regions/Desert Bus.webp" alt="Desert Bus Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>			<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Regions/Forsaken Station.zip"><h1>Forsaken Station [FT]</h1></a>
+					<a href="Dist/Regions/Forsaken Station.zip"><img src="Thumbnails/Regions/Forsaken Station.webp" alt="Forsaken Station Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>			<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Regions/Probationary District 4B.zip"><h1>Probationary District 4B [4B]</h1></a>
+					<a href="Dist/Regions/Probationary District 4B.zip"><img src="Thumbnails/Regions/Probationary District 4B.webp" alt="Probationary District 4B Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>			<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Regions/Solemn Quarry.zip"><h1>Solemn Quarry [SX]</h1></a>
+					<a href="Dist/Regions/Solemn Quarry.zip"><img src="Thumbnails/Regions/Solemn Quarry.webp" alt="Solemn Quarry Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>			<div class="ghost_box">
+				<div class="grid_box">
+					<a href="Dist/Regions/Sun-Scorched Forest.zip"><h1>Sun-Scorched Forest [NR]</h1></a>
+					<a href="Dist/Regions/Sun-Scorched Forest.zip"><img src="Thumbnails/Regions/Sun-Scorched Forest.webp" alt="Sun-Scorched Forest Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+		</div>
+		<h1 class="header">Downloads</h1>
+		<div class="box_grid">
+			<div class="ghost_box">
+				<div class="grid_box" id="Resources_img">
+					<a href="Dist/Resources.zip"><h1>Resources (Reorganized!)</h1></a>
+					<a href="Dist/Resources.zip"><img src="Thumbnails/Index/Resources.webp" alt="Resources Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Materials_img">
+					<a href="Dist/Materials.zip"><h1>Materials</h1></a>
+					<a href="Dist/Materials.zip"><img src="Thumbnails/Index/Materials.webp" alt="Materials Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vanilla Pack_img">
+					<a href="Dist/Vanilla Pack.zip"><h1>Vanilla Pack</h1></a>
+					<a href="Dist/Vanilla Pack.zip"><img src="Thumbnails/Vanilla Pack.webp" alt="Vanilla Pack Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+		</div>
+
+		<script>
+						var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+		</script>
+	</body>
+</html>

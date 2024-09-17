@@ -1,0 +1,714 @@
+<html>
+	<head>
+		<title>Tiles - Solar's Warehouse</title>
+		<link rel="icon" type="image/x-icon" href="solar.png">
+		<style>
+						#navbar {
+				margin: auto;
+				overflow: hidden;
+				background-color: #222;
+				display: flex;
+				justify-content: center;
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+
+			#navbar a {
+				font-family: Rodondo;
+				font-size: larger;
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				margin: auto;
+				padding: 0px;
+				text-decoration: none;
+			}
+
+			.sticky {
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+
+						@font-face {
+				font-family: AHL;
+				src: url('Fonts/Atkinson-Hyperlegible-Regular-102a.woff2');
+			}
+			@font-face {
+				font-family: Rodondo;
+				src: url('Fonts/Rodondo.otf');
+			}
+			
+			* {
+				font-family: AHL;
+				/* background-color: #222222AA; */
+			}
+			
+			h1 {
+				font-family: Rodondo;
+				color: white;
+				text-align: center;
+			}
+
+			h2 {
+				color: white;
+				text-align: center;
+			}
+
+			a:link {
+				color: white;
+				background-color: transparent;
+				text-decoration: none;
+			}
+
+			p {
+				background-color: #222222AA;
+				color: white;
+				padding: 8px;
+				text-align: center;
+				margin: auto;
+				font-size: 32px;
+			}
+
+			.header {
+				background-color: #222222AA;
+				font-size: 64px;
+				padding: 8px;
+				padding-left: 0px;
+				padding-right: 0px;
+				/* float: left; */
+			}
+
+						.box_grid {
+				display: grid;
+				grid-template-columns: 100%;
+				column-gap: 0;
+				grid-row-gap: 20px;
+			}
+			
+			.grid_box {
+				margin: auto;
+				background-color: #222222AA;
+				padding: 10px;
+				max-width: 350px;
+			}
+
+			@media only screen and (min-width: 750px) {
+				.box_grid {
+					grid-template-columns: 50% 50%;
+				}
+			}
+
+			@media only screen and (min-width: 1050px) {
+				.box_grid {
+					grid-template-columns: 33.3% 33.3% 33.3%;
+				}
+			}
+
+			@media only screen and (min-width: 1500px) {
+				.box_grid {
+					grid-template-columns: 25% 25% 25% 25%;
+				}
+			}
+
+			@media only screen and (min-width: 1800px) {
+				.box_grid {
+					grid-template-columns: 20% 20% 20% 20% 20%;
+				}
+			}
+
+			@media only screen and (min-width: 2160px) {
+				.box_grid {
+					grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+				}
+			}
+
+			.ghost_box {
+				margin: auto;
+				background-color: #00000000;
+				padding: 0px;
+				min-height: 200px;
+				max-width: 350px;
+			}
+
+			body {
+				background-image: url('Backgrounds/wanderer clean.png');
+  				background-repeat: no-repeat;
+  				background-attachment: fixed;
+				background-size: cover;
+			}
+
+			p{
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+				<div id="navbar", class="sticky", style="display: grid; grid-template-columns: 20% 20% 20% 20% 20%;">
+			<a href="tiles.html"><h2>Tiles</h2></a>
+			<a href="props.html"><h2>Props</h2></a>
+			<a href="index.html"><h1>Solar's Warehouse</h1></a>
+			<a href="regions.html"><h2>Projects</h2></a>
+			<a href="info.html"><h2>Info</h2></a>
+		</div>
+		<br>
+
+		<br>
+		<br>
+		<br>
+		<h1 class="header">Intructions</h1>
+		<p style="width: 1000px;"><strong>To install a tile pack:<br>1: Extract the downloaded zip<br>2: Copy the pngs to your Leditor's Graphics folder<br>3: Copy the text from the Copy_To_Init.txt into the Init.txt on a new line.<br></strong><br>
+			Community / Offical Editor: /Graphics<br>
+			Henry Markles' Leditor: /assets/renderer/Graphics<br>
+			Rained: /Data/Graphics<br>
+			RWE+ / Ogscule: /drizzle/Data/Graphics<br>
+		</p>
+
+		<h1 class="header">Tile Packs</h1>
+
+		<div class="box_grid">
+						<div class="ghost_box">
+				<div class="grid_box" id="3x3 Pipes_img">
+					<a href="Dist/Packs/Tile Packs/3x3 Pipes.zip"><h1>3x3 Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/3x3 Pipes.zip"><img src="Thumbnails/Tile Packs/3x3 Pipes.webp" alt="3x3 Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="AI Chamber_img">
+					<a href="Dist/Packs/Tile Packs/AI Chamber.zip"><h1>AI Chamber</h1></a>
+					<a href="Dist/Packs/Tile Packs/AI Chamber.zip"><img src="Thumbnails/Tile Packs/AI Chamber.webp" alt="AI Chamber Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Antenna_img">
+					<a href="Dist/Packs/Tile Packs/Antenna.zip"><h1>Antenna</h1></a>
+					<a href="Dist/Packs/Tile Packs/Antenna.zip"><img src="Thumbnails/Tile Packs/Antenna.webp" alt="Antenna Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Big Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Big Pipes.zip"><h1>Big Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Big Pipes.zip"><img src="Thumbnails/Tile Packs/Big Pipes.webp" alt="Big Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Bricks_img">
+					<a href="Dist/Packs/Tile Packs/Bricks.zip"><h1>Bricks</h1></a>
+					<a href="Dist/Packs/Tile Packs/Bricks.zip"><img src="Thumbnails/Tile Packs/Bricks.webp" alt="Bricks Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Bulkhead Wall_img">
+					<a href="Dist/Packs/Tile Packs/Bulkhead Wall.zip"><h1>Bulkhead Wall</h1></a>
+					<a href="Dist/Packs/Tile Packs/Bulkhead Wall.zip"><img src="Thumbnails/Tile Packs/Bulkhead Wall.webp" alt="Bulkhead Wall Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Cave_img">
+					<a href="Dist/Packs/Tile Packs/Cave.zip"><h1>Cave</h1></a>
+					<a href="Dist/Packs/Tile Packs/Cave.zip"><img src="Thumbnails/Tile Packs/Cave.webp" alt="Cave Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Chimney Segments_img">
+					<a href="Dist/Packs/Tile Packs/Chimney Segments.zip"><h1>Chimney Segments</h1></a>
+					<a href="Dist/Packs/Tile Packs/Chimney Segments.zip"><img src="Thumbnails/Tile Packs/Chimney Segments.webp" alt="Chimney Segments Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Containers_img">
+					<a href="Dist/Packs/Tile Packs/Containers.zip"><h1>Containers</h1></a>
+					<a href="Dist/Packs/Tile Packs/Containers.zip"><img src="Thumbnails/Tile Packs/Containers.webp" alt="Containers Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Conveyors_img">
+					<a href="Dist/Packs/Tile Packs/Conveyors.zip"><h1>Conveyors</h1></a>
+					<a href="Dist/Packs/Tile Packs/Conveyors.zip"><img src="Thumbnails/Tile Packs/Conveyors.webp" alt="Conveyors Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Coral_img">
+					<a href="Dist/Packs/Tile Packs/Coral.zip"><h1>Coral</h1></a>
+					<a href="Dist/Packs/Tile Packs/Coral.zip"><img src="Thumbnails/Tile Packs/Coral.webp" alt="Coral Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Crawl Holes_img">
+					<a href="Dist/Packs/Tile Packs/Crawl Holes.zip"><h1>Crawl Holes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Crawl Holes.zip"><img src="Thumbnails/Tile Packs/Crawl Holes.webp" alt="Crawl Holes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Crawl Spaces_img">
+					<a href="Dist/Packs/Tile Packs/Crawl Spaces.zip"><h1>Crawl Spaces</h1></a>
+					<a href="Dist/Packs/Tile Packs/Crawl Spaces.zip"><img src="Thumbnails/Tile Packs/Crawl Spaces.webp" alt="Crawl Spaces Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Cross Beams_img">
+					<a href="Dist/Packs/Tile Packs/Cross Beams.zip"><h1>Cross Beams</h1></a>
+					<a href="Dist/Packs/Tile Packs/Cross Beams.zip"><img src="Thumbnails/Tile Packs/Cross Beams.webp" alt="Cross Beams Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Diagonal Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Diagonal Pipes.zip"><h1>Diagonal Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Diagonal Pipes.zip"><img src="Thumbnails/Tile Packs/Diagonal Pipes.webp" alt="Diagonal Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Disused Plant_img">
+					<a href="Dist/Packs/Tile Packs/Disused Plant.zip"><h1>Disused Plant</h1></a>
+					<a href="Dist/Packs/Tile Packs/Disused Plant.zip"><img src="Thumbnails/Tile Packs/Disused Plant.webp" alt="Disused Plant Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Downpour Machines_img">
+					<a href="Dist/Packs/Tile Packs/Downpour Machines.zip"><h1>Downpour Machines</h1></a>
+					<a href="Dist/Packs/Tile Packs/Downpour Machines.zip"><img src="Thumbnails/Tile Packs/Downpour Machines.webp" alt="Downpour Machines Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Drills_img">
+					<a href="Dist/Packs/Tile Packs/Drills.zip"><h1>Drills</h1></a>
+					<a href="Dist/Packs/Tile Packs/Drills.zip"><img src="Thumbnails/Tile Packs/Drills.webp" alt="Drills Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Exhaust_img">
+					<a href="Dist/Packs/Tile Packs/Exhaust.zip"><h1>Exhaust</h1></a>
+					<a href="Dist/Packs/Tile Packs/Exhaust.zip"><img src="Thumbnails/Tile Packs/Exhaust.webp" alt="Exhaust Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Fan Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Fan Boxes.zip"><h1>Fan Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Fan Boxes.zip"><img src="Thumbnails/Tile Packs/Fan Boxes.webp" alt="Fan Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Farm Arrays_img">
+					<a href="Dist/Packs/Tile Packs/Farm Arrays.zip"><h1>Farm Arrays</h1></a>
+					<a href="Dist/Packs/Tile Packs/Farm Arrays.zip"><img src="Thumbnails/Tile Packs/Farm Arrays.webp" alt="Farm Arrays Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Fence Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Fence Boxes.zip"><h1>Fence Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Fence Boxes.zip"><img src="Thumbnails/Tile Packs/Fence Boxes.webp" alt="Fence Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Fences_img">
+					<a href="Dist/Packs/Tile Packs/Fences.zip"><h1>Fences</h1></a>
+					<a href="Dist/Packs/Tile Packs/Fences.zip"><img src="Thumbnails/Tile Packs/Fences.webp" alt="Fences Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Filters_img">
+					<a href="Dist/Packs/Tile Packs/Filters.zip"><h1>Filters</h1></a>
+					<a href="Dist/Packs/Tile Packs/Filters.zip"><img src="Thumbnails/Tile Packs/Filters.webp" alt="Filters Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Fishswallower_img">
+					<a href="Dist/Packs/Tile Packs/Fishswallower.zip"><h1>Fishswallower</h1></a>
+					<a href="Dist/Packs/Tile Packs/Fishswallower.zip"><img src="Thumbnails/Tile Packs/Fishswallower.webp" alt="Fishswallower Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Gate Parts_img">
+					<a href="Dist/Packs/Tile Packs/Gate Parts.zip"><h1>Gate Parts</h1></a>
+					<a href="Dist/Packs/Tile Packs/Gate Parts.zip"><img src="Thumbnails/Tile Packs/Gate Parts.webp" alt="Gate Parts Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Glass_img">
+					<a href="Dist/Packs/Tile Packs/Glass.zip"><h1>Glass</h1></a>
+					<a href="Dist/Packs/Tile Packs/Glass.zip"><img src="Thumbnails/Tile Packs/Glass.webp" alt="Glass Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Glyph Stone_img">
+					<a href="Dist/Packs/Tile Packs/Glyph Stone.zip"><h1>Glyph Stone</h1></a>
+					<a href="Dist/Packs/Tile Packs/Glyph Stone.zip"><img src="Thumbnails/Tile Packs/Glyph Stone.webp" alt="Glyph Stone Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Greenhouse_img">
+					<a href="Dist/Packs/Tile Packs/Greenhouse.zip"><h1>Greenhouse</h1></a>
+					<a href="Dist/Packs/Tile Packs/Greenhouse.zip"><img src="Thumbnails/Tile Packs/Greenhouse.webp" alt="Greenhouse Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Harvesters_img">
+					<a href="Dist/Packs/Tile Packs/Harvesters.zip"><h1>Harvesters</h1></a>
+					<a href="Dist/Packs/Tile Packs/Harvesters.zip"><img src="Thumbnails/Tile Packs/Harvesters.webp" alt="Harvesters Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Heads_img">
+					<a href="Dist/Packs/Tile Packs/Heads.zip"><h1>Heads</h1></a>
+					<a href="Dist/Packs/Tile Packs/Heads.zip"><img src="Thumbnails/Tile Packs/Heads.webp" alt="Heads Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Inside Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Inside Pipes.zip"><h1>Inside Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Inside Pipes.zip"><img src="Thumbnails/Tile Packs/Inside Pipes.webp" alt="Inside Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Inside Vents_img">
+					<a href="Dist/Packs/Tile Packs/Inside Vents.zip"><h1>Inside Vents</h1></a>
+					<a href="Dist/Packs/Tile Packs/Inside Vents.zip"><img src="Thumbnails/Tile Packs/Inside Vents.webp" alt="Inside Vents Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Invisible_img">
+					<a href="Dist/Packs/Tile Packs/Invisible.zip"><h1>Invisible</h1></a>
+					<a href="Dist/Packs/Tile Packs/Invisible.zip"><img src="Thumbnails/Tile Packs/Invisible.webp" alt="Invisible Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Leg_img">
+					<a href="Dist/Packs/Tile Packs/Leg.zip"><h1>Leg</h1></a>
+					<a href="Dist/Packs/Tile Packs/Leg.zip"><img src="Thumbnails/Tile Packs/Leg.webp" alt="Leg Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Light Fixtures_img">
+					<a href="Dist/Packs/Tile Packs/Light Fixtures.zip"><h1>Light Fixtures</h1></a>
+					<a href="Dist/Packs/Tile Packs/Light Fixtures.zip"><img src="Thumbnails/Tile Packs/Light Fixtures.webp" alt="Light Fixtures Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Machine Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Machine Boxes.zip"><h1>Machine Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Machine Boxes.zip"><img src="Thumbnails/Tile Packs/Machine Boxes.webp" alt="Machine Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Machine Misc_img">
+					<a href="Dist/Packs/Tile Packs/Machine Misc.zip"><h1>Machine Misc</h1></a>
+					<a href="Dist/Packs/Tile Packs/Machine Misc.zip"><img src="Thumbnails/Tile Packs/Machine Misc.webp" alt="Machine Misc Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Metal Beams_img">
+					<a href="Dist/Packs/Tile Packs/Metal Beams.zip"><h1>Metal Beams</h1></a>
+					<a href="Dist/Packs/Tile Packs/Metal Beams.zip"><img src="Thumbnails/Tile Packs/Metal Beams.webp" alt="Metal Beams Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Metal Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Metal Boxes.zip"><h1>Metal Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Metal Boxes.zip"><img src="Thumbnails/Tile Packs/Metal Boxes.webp" alt="Metal Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Metal Construction_img">
+					<a href="Dist/Packs/Tile Packs/Metal Construction.zip"><h1>Metal Construction</h1></a>
+					<a href="Dist/Packs/Tile Packs/Metal Construction.zip"><img src="Thumbnails/Tile Packs/Metal Construction.webp" alt="Metal Construction Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Metal Misc_img">
+					<a href="Dist/Packs/Tile Packs/Metal Misc.zip"><h1>Metal Misc</h1></a>
+					<a href="Dist/Packs/Tile Packs/Metal Misc.zip"><img src="Thumbnails/Tile Packs/Metal Misc.webp" alt="Metal Misc Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="New Horizons Plates_img">
+					<a href="Dist/Packs/Tile Packs/New Horizons Plates.zip"><h1>New Horizons Plates</h1></a>
+					<a href="Dist/Packs/Tile Packs/New Horizons Plates.zip"><img src="Thumbnails/Tile Packs/New Horizons Plates.webp" alt="New Horizons Plates Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Ornamentation_img">
+					<a href="Dist/Packs/Tile Packs/Ornamentation.zip"><h1>Ornamentation</h1></a>
+					<a href="Dist/Packs/Tile Packs/Ornamentation.zip"><img src="Thumbnails/Tile Packs/Ornamentation.webp" alt="Ornamentation Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Other Grates_img">
+					<a href="Dist/Packs/Tile Packs/Other Grates.zip"><h1>Other Grates</h1></a>
+					<a href="Dist/Packs/Tile Packs/Other Grates.zip"><img src="Thumbnails/Tile Packs/Other Grates.webp" alt="Other Grates Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Pagoda Roofs_img">
+					<a href="Dist/Packs/Tile Packs/Pagoda Roofs.zip"><h1>Pagoda Roofs</h1></a>
+					<a href="Dist/Packs/Tile Packs/Pagoda Roofs.zip"><img src="Thumbnails/Tile Packs/Pagoda Roofs.webp" alt="Pagoda Roofs Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Pipe Misc_img">
+					<a href="Dist/Packs/Tile Packs/Pipe Misc.zip"><h1>Pipe Misc</h1></a>
+					<a href="Dist/Packs/Tile Packs/Pipe Misc.zip"><img src="Thumbnails/Tile Packs/Pipe Misc.webp" alt="Pipe Misc Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Pipish_img">
+					<a href="Dist/Packs/Tile Packs/Pipish.zip"><h1>Pipish</h1></a>
+					<a href="Dist/Packs/Tile Packs/Pipish.zip"><img src="Thumbnails/Tile Packs/Pipish.webp" alt="Pipish Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Pistons_img">
+					<a href="Dist/Packs/Tile Packs/Pistons.zip"><h1>Pistons</h1></a>
+					<a href="Dist/Packs/Tile Packs/Pistons.zip"><img src="Thumbnails/Tile Packs/Pistons.webp" alt="Pistons Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Plates_img">
+					<a href="Dist/Packs/Tile Packs/Plates.zip"><h1>Plates</h1></a>
+					<a href="Dist/Packs/Tile Packs/Plates.zip"><img src="Thumbnails/Tile Packs/Plates.webp" alt="Plates Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Pole Decor_img">
+					<a href="Dist/Packs/Tile Packs/Pole Decor.zip"><h1>Pole Decor</h1></a>
+					<a href="Dist/Packs/Tile Packs/Pole Decor.zip"><img src="Thumbnails/Tile Packs/Pole Decor.webp" alt="Pole Decor Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Rails_img">
+					<a href="Dist/Packs/Tile Packs/Rails.zip"><h1>Rails</h1></a>
+					<a href="Dist/Packs/Tile Packs/Rails.zip"><img src="Thumbnails/Tile Packs/Rails.webp" alt="Rails Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Ramps_img">
+					<a href="Dist/Packs/Tile Packs/Ramps.zip"><h1>Ramps</h1></a>
+					<a href="Dist/Packs/Tile Packs/Ramps.zip"><img src="Thumbnails/Tile Packs/Ramps.webp" alt="Ramps Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Rig Metal_img">
+					<a href="Dist/Packs/Tile Packs/Rig Metal.zip"><h1>Rig Metal</h1></a>
+					<a href="Dist/Packs/Tile Packs/Rig Metal.zip"><img src="Thumbnails/Tile Packs/Rig Metal.webp" alt="Rig Metal Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Rivet Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Rivet Pipes.zip"><h1>Rivet Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Rivet Pipes.zip"><img src="Thumbnails/Tile Packs/Rivet Pipes.webp" alt="Rivet Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Roof Houses_img">
+					<a href="Dist/Packs/Tile Packs/Roof Houses.zip"><h1>Roof Houses</h1></a>
+					<a href="Dist/Packs/Tile Packs/Roof Houses.zip"><img src="Thumbnails/Tile Packs/Roof Houses.webp" alt="Roof Houses Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Rusted Moss_img">
+					<a href="Dist/Packs/Tile Packs/Rusted Moss.zip"><h1>Rusted Moss</h1></a>
+					<a href="Dist/Packs/Tile Packs/Rusted Moss.zip"><img src="Thumbnails/Tile Packs/Rusted Moss.webp" alt="Rusted Moss Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="SU grates_img">
+					<a href="Dist/Packs/Tile Packs/SU grates.zip"><h1>SU grates</h1></a>
+					<a href="Dist/Packs/Tile Packs/SU grates.zip"><img src="Thumbnails/Tile Packs/SU grates.webp" alt="SU grates Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="SU patterns_img">
+					<a href="Dist/Packs/Tile Packs/SU patterns.zip"><h1>SU patterns</h1></a>
+					<a href="Dist/Packs/Tile Packs/SU patterns.zip"><img src="Thumbnails/Tile Packs/SU patterns.webp" alt="SU patterns Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Science Equipment_img">
+					<a href="Dist/Packs/Tile Packs/Science Equipment.zip"><h1>Science Equipment</h1></a>
+					<a href="Dist/Packs/Tile Packs/Science Equipment.zip"><img src="Thumbnails/Tile Packs/Science Equipment.webp" alt="Science Equipment Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Shanty Town_img">
+					<a href="Dist/Packs/Tile Packs/Shanty Town.zip"><h1>Shanty Town</h1></a>
+					<a href="Dist/Packs/Tile Packs/Shanty Town.zip"><img src="Thumbnails/Tile Packs/Shanty Town.webp" alt="Shanty Town Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Shelters_img">
+					<a href="Dist/Packs/Tile Packs/Shelters.zip"><h1>Shelters</h1></a>
+					<a href="Dist/Packs/Tile Packs/Shelters.zip"><img src="Thumbnails/Tile Packs/Shelters.webp" alt="Shelters Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Sign Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Sign Boxes.zip"><h1>Sign Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Sign Boxes.zip"><img src="Thumbnails/Tile Packs/Sign Boxes.webp" alt="Sign Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Sign Lines_img">
+					<a href="Dist/Packs/Tile Packs/Sign Lines.zip"><h1>Sign Lines</h1></a>
+					<a href="Dist/Packs/Tile Packs/Sign Lines.zip"><img src="Thumbnails/Tile Packs/Sign Lines.webp" alt="Sign Lines Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Signs_img">
+					<a href="Dist/Packs/Tile Packs/Signs.zip"><h1>Signs</h1></a>
+					<a href="Dist/Packs/Tile Packs/Signs.zip"><img src="Thumbnails/Tile Packs/Signs.webp" alt="Signs Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Small machine_img">
+					<a href="Dist/Packs/Tile Packs/Small machine.zip"><h1>Small machine</h1></a>
+					<a href="Dist/Packs/Tile Packs/Small machine.zip"><img src="Thumbnails/Tile Packs/Small machine.webp" alt="Small machine Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Smooth Stone_img">
+					<a href="Dist/Packs/Tile Packs/Smooth Stone.zip"><h1>Smooth Stone</h1></a>
+					<a href="Dist/Packs/Tile Packs/Smooth Stone.zip"><img src="Thumbnails/Tile Packs/Smooth Stone.webp" alt="Smooth Stone Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Solid Color_img">
+					<a href="Dist/Packs/Tile Packs/Solid Color.zip"><h1>Solid Color</h1></a>
+					<a href="Dist/Packs/Tile Packs/Solid Color.zip"><img src="Thumbnails/Tile Packs/Solid Color.webp" alt="Solid Color Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Stockade_img">
+					<a href="Dist/Packs/Tile Packs/Stockade.zip"><h1>Stockade</h1></a>
+					<a href="Dist/Packs/Tile Packs/Stockade.zip"><img src="Thumbnails/Tile Packs/Stockade.webp" alt="Stockade Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Stones_img">
+					<a href="Dist/Packs/Tile Packs/Stones.zip"><h1>Stones</h1></a>
+					<a href="Dist/Packs/Tile Packs/Stones.zip"><img src="Thumbnails/Tile Packs/Stones.webp" alt="Stones Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Substation Tanks_img">
+					<a href="Dist/Packs/Tile Packs/Substation Tanks.zip"><h1>Substation Tanks</h1></a>
+					<a href="Dist/Packs/Tile Packs/Substation Tanks.zip"><img src="Thumbnails/Tile Packs/Substation Tanks.webp" alt="Substation Tanks Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Superstructure_img">
+					<a href="Dist/Packs/Tile Packs/Superstructure.zip"><h1>Superstructure</h1></a>
+					<a href="Dist/Packs/Tile Packs/Superstructure.zip"><img src="Thumbnails/Tile Packs/Superstructure.webp" alt="Superstructure Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Tank Segments_img">
+					<a href="Dist/Packs/Tile Packs/Tank Segments.zip"><h1>Tank Segments</h1></a>
+					<a href="Dist/Packs/Tile Packs/Tank Segments.zip"><img src="Thumbnails/Tile Packs/Tank Segments.webp" alt="Tank Segments Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Temple Stone_img">
+					<a href="Dist/Packs/Tile Packs/Temple Stone.zip"><h1>Temple Stone</h1></a>
+					<a href="Dist/Packs/Tile Packs/Temple Stone.zip"><img src="Thumbnails/Tile Packs/Temple Stone.webp" alt="Temple Stone Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Thick Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Thick Pipes.zip"><h1>Thick Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Thick Pipes.zip"><img src="Thumbnails/Tile Packs/Thick Pipes.webp" alt="Thick Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Thin Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Thin Pipes.zip"><h1>Thin Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Thin Pipes.zip"><img src="Thumbnails/Tile Packs/Thin Pipes.webp" alt="Thin Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Trains_img">
+					<a href="Dist/Packs/Tile Packs/Trains.zip"><h1>Trains</h1></a>
+					<a href="Dist/Packs/Tile Packs/Trains.zip"><img src="Thumbnails/Tile Packs/Trains.webp" alt="Trains Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vent Boxes_img">
+					<a href="Dist/Packs/Tile Packs/Vent Boxes.zip"><h1>Vent Boxes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Vent Boxes.zip"><img src="Thumbnails/Tile Packs/Vent Boxes.webp" alt="Vent Boxes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vent Ducts_img">
+					<a href="Dist/Packs/Tile Packs/Vent Ducts.zip"><h1>Vent Ducts</h1></a>
+					<a href="Dist/Packs/Tile Packs/Vent Ducts.zip"><img src="Thumbnails/Tile Packs/Vent Ducts.webp" alt="Vent Ducts Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vent Misc_img">
+					<a href="Dist/Packs/Tile Packs/Vent Misc.zip"><h1>Vent Misc</h1></a>
+					<a href="Dist/Packs/Tile Packs/Vent Misc.zip"><img src="Thumbnails/Tile Packs/Vent Misc.webp" alt="Vent Misc Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vent Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Vent Pipes.zip"><h1>Vent Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Vent Pipes.zip"><img src="Thumbnails/Tile Packs/Vent Pipes.webp" alt="Vent Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Vertical Trains_img">
+					<a href="Dist/Packs/Tile Packs/Vertical Trains.zip"><h1>Vertical Trains</h1></a>
+					<a href="Dist/Packs/Tile Packs/Vertical Trains.zip"><img src="Thumbnails/Tile Packs/Vertical Trains.webp" alt="Vertical Trains Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Wall Pipes_img">
+					<a href="Dist/Packs/Tile Packs/Wall Pipes.zip"><h1>Wall Pipes</h1></a>
+					<a href="Dist/Packs/Tile Packs/Wall Pipes.zip"><img src="Thumbnails/Tile Packs/Wall Pipes.webp" alt="Wall Pipes Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Wall Vents_img">
+					<a href="Dist/Packs/Tile Packs/Wall Vents.zip"><h1>Wall Vents</h1></a>
+					<a href="Dist/Packs/Tile Packs/Wall Vents.zip"><img src="Thumbnails/Tile Packs/Wall Vents.webp" alt="Wall Vents Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Wall Wires_img">
+					<a href="Dist/Packs/Tile Packs/Wall Wires.zip"><h1>Wall Wires</h1></a>
+					<a href="Dist/Packs/Tile Packs/Wall Wires.zip"><img src="Thumbnails/Tile Packs/Wall Wires.webp" alt="Wall Wires Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Wall_img">
+					<a href="Dist/Packs/Tile Packs/Wall.zip"><h1>Wall</h1></a>
+					<a href="Dist/Packs/Tile Packs/Wall.zip"><img src="Thumbnails/Tile Packs/Wall.webp" alt="Wall Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Water Trains_img">
+					<a href="Dist/Packs/Tile Packs/Water Trains.zip"><h1>Water Trains</h1></a>
+					<a href="Dist/Packs/Tile Packs/Water Trains.zip"><img src="Thumbnails/Tile Packs/Water Trains.webp" alt="Water Trains Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="West Building Site_img">
+					<a href="Dist/Packs/Tile Packs/West Building Site.zip"><h1>West Building Site</h1></a>
+					<a href="Dist/Packs/Tile Packs/West Building Site.zip"><img src="Thumbnails/Tile Packs/West Building Site.webp" alt="West Building Site Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+			<div class="ghost_box">
+				<div class="grid_box" id="Window Segments_img">
+					<a href="Dist/Packs/Tile Packs/Window Segments.zip"><h1>Window Segments</h1></a>
+					<a href="Dist/Packs/Tile Packs/Window Segments.zip"><img src="Thumbnails/Tile Packs/Window Segments.webp" alt="Window Segments Thumbnail" width="320" height="180"></a>
+				</div>
+			</div>
+
+		</div>
+
+		<script>
+						var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+		</script>
+	</body>
+</html>
