@@ -3,135 +3,11 @@
 		<title>Solar's Warehouse</title>
 		<link rel="icon" type="image/x-icon" href="solar.png">
 		<style>
-						#navbar {
-				margin: auto;
-				overflow: hidden;
-				background-color: #222;
-				display: flex;
-				justify-content: center;
-				position: fixed;
-				top: 0;
-				left: 0;
-			}
+			/* |navbar_css| */
 
-			#navbar a {
-				font-family: Rodondo;
-				font-size: larger;
-				float: left;
-				display: block;
-				color: white;
-				text-align: center;
-				margin: auto;
-				padding: 0px;
-				text-decoration: none;
-			}
+			/* |basic_css| */
 
-			.sticky {
-				position: fixed;
-				top: 0;
-				width: 100%;
-			}
-
-						@font-face {
-				font-family: AHL;
-				src: url('Fonts/Atkinson-Hyperlegible-Regular-102a.woff2');
-			}
-			@font-face {
-				font-family: Rodondo;
-				src: url('Fonts/Rodondo.otf');
-			}
-			
-			* {
-				font-family: AHL;
-				/* background-color: #222222AA; */
-			}
-			
-			h1 {
-				font-family: Rodondo;
-				color: white;
-				text-align: center;
-			}
-
-			h2 {
-				color: white;
-				text-align: center;
-			}
-
-			a:link {
-				color: white;
-				background-color: transparent;
-				text-decoration: none;
-			}
-
-			p {
-				background-color: #222222AA;
-				color: white;
-				padding: 8px;
-				text-align: center;
-				margin: auto;
-				font-size: 32px;
-			}
-
-			.header {
-				background-color: #222222AA;
-				font-size: 64px;
-				padding: 8px;
-				padding-left: 0px;
-				padding-right: 0px;
-				/* float: left; */
-			}
-
-						.box_grid {
-				display: grid;
-				grid-template-columns: 100%;
-				column-gap: 0;
-				grid-row-gap: 20px;
-			}
-			
-			.grid_box {
-				margin: auto;
-				background-color: #222222AA;
-				padding: 10px;
-				max-width: 350px;
-			}
-
-			@media only screen and (min-width: 750px) {
-				.box_grid {
-					grid-template-columns: 50% 50%;
-				}
-			}
-
-			@media only screen and (min-width: 1050px) {
-				.box_grid {
-					grid-template-columns: 33.3% 33.3% 33.3%;
-				}
-			}
-
-			@media only screen and (min-width: 1500px) {
-				.box_grid {
-					grid-template-columns: 25% 25% 25% 25%;
-				}
-			}
-
-			@media only screen and (min-width: 1800px) {
-				.box_grid {
-					grid-template-columns: 20% 20% 20% 20% 20%;
-				}
-			}
-
-			@media only screen and (min-width: 2160px) {
-				.box_grid {
-					grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
-				}
-			}
-
-			.ghost_box {
-				margin: auto;
-				background-color: #00000000;
-				padding: 0px;
-				min-height: 200px;
-				max-width: 350px;
-			}
+			/* |box_grid_css| */
 
 			body {
 				background-image: url('Backgrounds/scholar dim.png');
@@ -142,14 +18,7 @@
 		</style>
 	</head>
 	<body>
-				<div id="navbar", class="sticky", style="display: grid; grid-template-columns: 20% 20% 20% 20% 20%;">
-			<a href="tiles.html"><h2>Tiles</h2></a>
-			<a href="props.html"><h2>Props</h2></a>
-			<a href="index.html"><h1>Solar's Warehouse</h1></a>
-			<a href="regions.html"><h2>Projects</h2></a>
-			<a href="info.html"><h2>Info</h2></a>
-		</div>
-		<br>
+		|navbar|
 		<br><br>
 
 		<h1 class="header">Recommended Level Editors</h1>
@@ -315,6 +184,11 @@
 				<a href="https://ln5.sync.com/dl/55a36f020/ab9tsrvb-pawzct9a-cevwrdgn-2pkthfz2/view/default/10520072550004" target="_blank"><img src="Thumbnails/Tools/RenderEditor.webp" alt="Render Editor Thumbnail" width="480" height="270>"></a>
 				<p>A tools that allows for limited editing of the pre-existing Rain World levels, such as editing pipe interconnections or changing water levels.</p>
 			</div>
+
+			<div style="margin: auto; background-color: #222222AA; padding: 10px; max-width: 500px; min-height: 550px; margin: auto; text-align: center;">Adobe Director</h1></a>
+				<a href="https://archive.org/download/dirarchive/director-12/" target="_blank"><img src="Thumbnails/Tools/Director.webp" alt="Adobe Director Thumbnail" width="480" height="270>"></a>
+				<p>The software used to make the Official, Downpour, and Comms Editors. It can be used to edit the Comms code to add new effects. Due to it being abandoned by Adobe, the trial must be reset manually every 30 days.</p>
+			</div>
 		</div>
 
 		<h1 class="header">Credits</h1>
@@ -356,8 +230,7 @@
 		</p> -->
 
 		<script>
-						var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
+			// |navbar_script|
 		</script>
 	</body>
 </html>
